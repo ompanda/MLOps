@@ -25,6 +25,14 @@ steps:
   inputs:
     azureSubscription: 'build-demo'
     scriptLocation: 'inlineScript'
+    inlineScript: 'az --version'
+    workingDirectory: 'model-training'
+  
+
+- task: AzureCLI@1
+  inputs:
+    azureSubscription: 'build-demo'
+    scriptLocation: 'inlineScript'
     inlineScript: 'az extension add -n azure-cli-ml'
     workingDirectory: 'model-training'
   
