@@ -38,7 +38,7 @@ steps:
   inputs:
     azureSubscription: 'build-demo'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az ml folder attach -w build-2019-demo -g scottgu-all-hands'
+    inlineScript: 'az ml folder attach -w MLWorkspace -g Om_RG'
     workingDirectory: ''
 
 - task: AzureCLI@1
