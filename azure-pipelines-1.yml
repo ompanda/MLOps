@@ -23,7 +23,7 @@ steps:
 
 - task: AzureCLI@1
   inputs:
-    azureSubscription: 'build-demo'
+    azureSubscription: 'build-demo1'
     scriptLocation: 'inlineScript'
     inlineScript: 'az --version'
     workingDirectory: 'model-training'
